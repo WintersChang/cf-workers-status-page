@@ -16,13 +16,22 @@ settings:
 
 monitors:
   - id: localbond-prod # unique identifier
-    name: admin.localbond.tw/login
+    name: admin.localbond.tw
     description: 'localbond prod env' # default=empty
     url: 'https://admin.localbond.tw/login' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    linkable: true # allows the title to be a link, default=true
+    
+  - id: localbond-API-prod # unique identifier
+    name: api.localbond.tw
+    description: 'localbond API prod env' # default=empty
+    url: 'https://api.localbond.tw' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
 
   - id: www-cloudflare-com
     name: www.cloudflare.com
