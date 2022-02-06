@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: localbond-prod # unique identifier
-    name: workers.cloudflare.com
+    name: admin.localbond.tw/login
     description: 'localbond prod env' # default=empty
     url: 'https://admin.localbond.tw/login' # URL to fetch
     method: GET # default=GET
