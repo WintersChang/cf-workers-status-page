@@ -54,8 +54,8 @@ monitors:
   - id: bi-localbond-prod # unique identifier
     name: localbond bi
     description: 'localbond bi' # default=empty
-    url: 'https://bi.yo-woo.com' # URL to fetch
+    url: 'https://bi.yo-woo.com/yw-backend-tasks/index?_pageSubject=ybt&_pageName=account_login' # URL to fetch
     method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
+    expectStatus: 304 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
