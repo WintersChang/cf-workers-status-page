@@ -16,25 +16,25 @@ settings:
 
 monitors:
   - id: localbond-prod # unique identifier
-    name: admin.localbond.tw
+    name: localbond Web prod
     description: 'localbond prod env' # default=empty
     url: 'https://admin.localbond.tw/login' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: true # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true
     
   - id: localbond-API-prod # unique identifier
-    name: api.localbond.tw
+    name: localbond API prod
     description: 'localbond API prod env' # default=empty
     url: 'https://api.localbond.tw/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: true # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true
 
   - id: yowoo-shortlink-prod # unique identifier
-    name: link.yo-woo.com
+    name: yowoo短網址
     description: 'yowoo短網址' # default=empty
     url: 'https://link.yo-woo.com' # URL to fetch
     method: GET # default=GET
@@ -43,7 +43,7 @@ monitors:
     linkable: false # allows the title to be a link, default=true
 
   - id: api-proxy-localbond-prod # unique identifier
-    name: api-proxy.localbond.tw
+    name: localbond proxy api prod
     description: 'api proxy for kgi prod env' # default=empty
     url: 'https://api-proxy.localbond.tw' # URL to fetch
     method: GET # default=GET
@@ -52,7 +52,7 @@ monitors:
     linkable: false # allows the title to be a link, default=true
     
   - id: bi-localbond-prod # unique identifier
-    name: bi.yo-woo.com
+    name: localbond bi
     description: 'localbond bi' # default=empty
     url: 'https://bi.yo-woo.com' # URL to fetch
     method: GET # default=GET
