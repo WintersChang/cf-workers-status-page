@@ -35,9 +35,27 @@ monitors:
 
   - id: yowoo-shortlink-prod # unique identifier
     name: link.yo-woo.com
-    description: 'yowoo短網址 prod env' # default=empty
+    description: 'yowoo短網址' # default=empty
     url: 'https://link.yo-woo.com' # URL to fetch
     method: GET # default=GET
     expectStatus: 400 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
+  - id: api-proxy-localbond-prod # unique identifier
+    name: api-proxy.localbond.tw
+    description: 'api proxy for kgi prod env' # default=empty
+    url: 'https://api-proxy.localbond.tw' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+    
+  - id: bi-localbond-prod # unique identifier
+    name: bi.yo-woo.com
+    description: 'localbond bi' # default=empty
+    url: 'https://bi.yo-woo.com' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
