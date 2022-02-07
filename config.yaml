@@ -33,7 +33,7 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
-- id: yowoo-shortlink-prod # unique identifier
+  - id: yowoo-shortlink-prod # unique identifier
     name: link.yo-woo.com
     description: 'yowoo短網址 prod env' # default=empty
     url: 'https://link.yo-woo.com' # URL to fetch
