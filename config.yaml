@@ -59,3 +59,12 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
+
+  - id: livinglife-prod # unique identifier
+    name: livinglife prod
+    description: 'livinglife prod' # default=empty
+    url: 'https://livinglife.com.tw' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
